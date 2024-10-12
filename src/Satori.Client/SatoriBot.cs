@@ -22,9 +22,9 @@ public partial class SatoriBot {
     }
 
     private void EventRaiser(object? sender, Event e) {
-        // if (!e.Platform.Equals(_platform, StringComparison.OrdinalIgnoreCase) ||
-        //     !e.SelfId.Equals(_selfId, StringComparison.OrdinalIgnoreCase))
-        //     return;
+        if (!e.Platform.Equals(_platform, StringComparison.OrdinalIgnoreCase) ||
+            !e.SelfId.Equals(_selfId, StringComparison.OrdinalIgnoreCase))
+            return;
 
         EventReceived?.Invoke(this, e);
 

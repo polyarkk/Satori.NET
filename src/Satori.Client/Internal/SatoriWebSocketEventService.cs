@@ -55,12 +55,14 @@ internal sealed class SatoriWebSocketEventService : ISatoriEventService {
                 EventReceived?.Invoke(this, json.Deserialize<Signal<Event>>(SatoriClient.JsonOptions)!.Body!);
                 break;
             case SignalOperation.Ready:
-                // set platform and self id
-                JsonElement login = json.RootElement.GetProperty("body").GetProperty("logins")[0];
-                _client.Platform = login.GetProperty("platform").GetString()
-                    ?? throw new NullReferenceException("Unable to get platform field from satori server!");
-                _client.SelfId = login.GetProperty("self_id").GetString()
-                    ?? throw new NullReferenceException("Unable to get self id field from satori server!");
+                JsonElement logins = json.RootElement.GetProperty("body").GetProperty("logins");
+
+                for (int i = 0; i < logins.GetArrayLength(); i++) {
+                    _client.Log(LogLevel.Trace,
+                        $"Bot Platform: {logins[i].GetProperty("platform").GetString()}, Self ID: {logins[i].GetProperty("self_id").GetString()}"
+                    );
+                }
+
                 break;
             }
         } catch (Exception e) {
