@@ -1,7 +1,6 @@
 ﻿namespace Satori.Protocol.Events;
 
-public enum SignalOperation
-{
+public enum SignalOperation {
     /// <summary>
     /// 事件
     /// </summary>
@@ -25,5 +24,5 @@ public enum SignalOperation
     /// <summary>
     /// 鉴权回复
     /// </summary>
-    Ready = 4
+    Ready = 4,
 }

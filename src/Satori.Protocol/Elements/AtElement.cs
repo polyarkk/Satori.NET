@@ -3,8 +3,7 @@
 /// <summary>
 /// 提及用户
 /// </summary>
-public class AtElement : Element
-{
+public class AtElement : Element {
     public override string TagName => "at";
 
     /// <summary>

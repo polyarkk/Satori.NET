@@ -3,8 +3,7 @@
 /// <summary>
 /// 群组成员
 /// </summary>
-public class GuildMember
-{
+public class GuildMember {
     /// <summary>
     /// 用户对象
     /// </summary>

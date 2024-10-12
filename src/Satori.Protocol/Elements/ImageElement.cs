@@ -1,7 +1,6 @@
 ﻿namespace Satori.Protocol.Elements;
 
-public class ImageElement : ResourceElement
-{
+public class ImageElement : ResourceElement {
     public override string TagName => "img";
 
     /// <summary>

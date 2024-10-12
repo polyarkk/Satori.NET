@@ -2,18 +2,16 @@
 
 namespace Satori.Client;
 
-public partial class SatoriBot
-{
+public partial class SatoriBot {
     /// <summary>
     /// 获取群组频道
     /// </summary>
     /// <param name="channelId"></param>
-    public Task<Channel> GetChannelAsync(string channelId)
-    {
-        return SendAsync<Channel>("/v1/channel.get", new
-        {
-            channel_id = channelId
-        });
+    public Task<Channel> GetChannelAsync(string channelId) {
+        return SendAsync<Channel>("/v1/channel.get", new {
+                channel_id = channelId,
+            }
+        );
     }
 
     // /// <summary>

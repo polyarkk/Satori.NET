@@ -2,8 +2,7 @@
 
 namespace Satori.Client.Internal;
 
-internal interface ISatoriEventService
-{
+internal interface ISatoriEventService : IDisposable {
     event EventHandler<Event> EventReceived;
 
     Task StartAsync();

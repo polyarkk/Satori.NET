@@ -3,8 +3,7 @@
 /// <summary>
 /// 用户
 /// </summary>
-public class User
-{
+public class User {
     /// <summary>
     /// 群组 ID
     /// </summary>

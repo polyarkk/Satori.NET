@@ -3,8 +3,7 @@
 /// <summary>
 /// 登录信息
 /// </summary>
-public class Login
-{
+public class Login {
     /// <summary>
     /// 用户对象
     /// </summary>
@@ -26,8 +25,7 @@ public class Login
     public Status Status { get; set; }
 }
 
-public enum Status
-{
+public enum Status {
     /// <summary>
     /// 离线
     /// </summary>
@@ -51,5 +49,5 @@ public enum Status
     /// <summary>
     /// 重新连接
     /// </summary>
-    Reconnect = 4
+    Reconnect = 4,
 }

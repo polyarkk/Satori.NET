@@ -1,7 +1,6 @@
 ﻿namespace Satori.Protocol.Elements;
 
-public abstract class ResourceElement : Element
-{
+public abstract class ResourceElement : Element {
     /// <summary>
     /// 资源的 URL
     /// </summary>

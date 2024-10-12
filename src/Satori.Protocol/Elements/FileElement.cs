@@ -3,7 +3,6 @@
 /// <summary>
 /// 文件元素
 /// </summary>
-public class FileElement : ResourceElement
-{
+public class FileElement : ResourceElement {
     public override string TagName => "file";
 }

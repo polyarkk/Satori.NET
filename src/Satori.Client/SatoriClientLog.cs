@@ -1,7 +1,6 @@
 ﻿namespace Satori.Client;
 
-public class SatoriClientLog
-{
+public class SatoriClientLog {
     public DateTime LogTime { get; }
 
     public LogLevel LogLevel { get; }
@@ -10,15 +9,13 @@ public class SatoriClientLog
 
     public Exception? Exception { get; }
 
-    public SatoriClientLog(LogLevel logLevel, string message)
-    {
+    public SatoriClientLog(LogLevel logLevel, string message) {
         LogTime = DateTime.Now;
         LogLevel = logLevel;
         Message = message;
     }
 
-    public SatoriClientLog(Exception e)
-    {
+    public SatoriClientLog(Exception e) {
         LogTime = DateTime.Now;
         Exception = e;
         LogLevel = LogLevel.Error;

@@ -3,8 +3,7 @@
 /// <summary>
 /// 群组
 /// </summary>
-public class Guild
-{
+public class Guild {
     /// <summary>
     /// 群组 ID
     /// </summary>

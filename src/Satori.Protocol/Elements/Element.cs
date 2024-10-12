@@ -1,7 +1,6 @@
 ﻿namespace Satori.Protocol.Elements;
 
-public class Element
-{
+public class Element {
     public virtual string? TagName => null;
 
     public virtual string[]? AlternativeTagNames { get; } = null;

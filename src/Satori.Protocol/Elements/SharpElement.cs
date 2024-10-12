@@ -3,8 +3,7 @@
 /// <summary>
 /// 提及频道
 /// </summary>
-public class SharpElement : Element
-{
+public class SharpElement : Element {
     public override string TagName => "sharp";
 
     /// <summary>

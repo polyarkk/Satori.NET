@@ -2,7 +2,6 @@
 
 namespace Satori.Protocol.Events;
 
-public class ReadySignalBody
-{
+public class ReadySignalBody {
     public IEnumerable<Login> Logins { get; set; } = Array.Empty<Login>();
 }

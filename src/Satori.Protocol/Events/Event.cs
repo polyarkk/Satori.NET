@@ -2,8 +2,7 @@
 
 namespace Satori.Protocol.Events;
 
-public class Event
-{
+public class Event {
     /// <summary>
     /// 事件 ID
     /// </summary>

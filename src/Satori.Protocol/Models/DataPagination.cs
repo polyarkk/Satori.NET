@@ -1,7 +1,6 @@
 ﻿namespace Satori.Protocol.Models;
 
-public class DataPagination<T>
-{
+public class DataPagination<T> {
     /// <summary>
     /// 数据
     /// </summary>

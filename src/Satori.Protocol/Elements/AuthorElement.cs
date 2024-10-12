@@ -3,8 +3,7 @@
 /// <summary>
 /// 作者
 /// </summary>
-public class AuthorElement : Element
-{
+public class AuthorElement : Element {
     public override string TagName => "author";
 
     /// <summary>

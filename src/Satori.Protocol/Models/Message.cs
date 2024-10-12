@@ -3,8 +3,7 @@
 /// <summary>
 /// 消息
 /// </summary>
-public class Message
-{
+public class Message {
     /// <summary>
     /// 消息 ID
     /// </summary>

@@ -3,8 +3,7 @@
 /// <summary>
 /// 频道
 /// </summary>
-public class Channel
-{
+public class Channel {
     /// <summary>
     /// 频道 ID
     /// </summary>
@@ -26,8 +25,7 @@ public class Channel
     public string? ParentId { get; set; }
 }
 
-public enum ChannelType
-{
+public enum ChannelType {
     /// <summary>
     /// 文本频道
     /// </summary>
@@ -46,5 +44,5 @@ public enum ChannelType
     /// <summary>
     /// 私聊频道
     /// </summary>
-    Direct = 4
+    Direct = 4,
 }

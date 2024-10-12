@@ -1,8 +1,7 @@
 ﻿namespace Satori.Protocol.Events;
 
-public static class SatoriEventTypes
-{
-    #region Guild
+public static class SatoriEventTypes {
+#region Guild
 
     public const string GuildAdded = "guild-added";
 
@@ -12,9 +11,9 @@ public static class SatoriEventTypes
 
     public const string GuildRequest = "guild-request";
 
-    #endregion
+#endregion
 
-    #region GuildMember
+#region GuildMember
 
     public const string GuildMemberAdded = "guild-member-added";
 
@@ -24,9 +23,9 @@ public static class SatoriEventTypes
 
     public const string GuildMemberRequest = "guild-member-request";
 
-    #endregion
+#endregion
 
-    #region GuildRole
+#region GuildRole
 
     public const string GuildRoleCreated = "guild-role-created";
 
@@ -34,9 +33,9 @@ public static class SatoriEventTypes
 
     public const string GuildRoleDeleted = "guild-role-deleted";
 
-    #endregion
+#endregion
 
-    #region Login
+#region Login
 
     public const string LoginAdded = "login-added";
 
@@ -44,9 +43,9 @@ public static class SatoriEventTypes
 
     public const string LoginUpdated = "login-updated";
 
-    #endregion
+#endregion
 
-    #region Message
+#region Message
 
     public const string MessageCreated = "message-created";
 
@@ -54,19 +53,19 @@ public static class SatoriEventTypes
 
     public const string MessageDeleted = "message-deleted";
 
-    #endregion
+#endregion
 
-    #region Reaction
+#region Reaction
 
     public const string ReactionAdded = "reaction-added";
 
     public const string ReactionRemoved = "reaction-removed";
 
-    #endregion
+#endregion
 
-    #region User
+#region User
 
     public const string FriendRequest = "friend-request";
 
-    #endregion
+#endregion
 }

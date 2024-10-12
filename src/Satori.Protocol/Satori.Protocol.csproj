@@ -1,21 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <Title>Satori.Protocol</Title>
-        <Description>Model definitions for Satori Protocol v1.</Description>
-        <PackageIcon>logo.png</PackageIcon>
+  <PropertyGroup>
+    <Title>Satori.Protocol</Title>
+    <Description>Model definitions for Satori Protocol v1.</Description>
+    <PackageIcon>logo.png</PackageIcon>
 
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
-        <!-- TODO: 补全文档 -->
-        <NoWarn>CS1591</NoWarn>
-    </PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- TODO: 补全文档 -->
+    <NoWarn>CS1591</NoWarn>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
 
-    <ItemGroup>
-        <PackageReference Include="HtmlAgilityPack" Version="1.11.54" />
-    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.54" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <None Include="../../assets/logo.png" Pack="true" PackagePath="/" />
-    </ItemGroup>
+  <ItemGroup>
+    <None Include="../../assets/logo.png" Pack="true" PackagePath="/" />
+  </ItemGroup>
 
 </Project>

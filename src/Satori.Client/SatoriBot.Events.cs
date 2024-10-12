@@ -2,11 +2,10 @@
 
 namespace Satori.Client;
 
-public partial class SatoriBot
-{
+public partial class SatoriBot {
     public event EventHandler<Event>? EventReceived;
 
-    #region Guild
+#region Guild
 
     public event EventHandler<Event>? GuildAdded;
 
@@ -16,9 +15,9 @@ public partial class SatoriBot
 
     public event EventHandler<Event>? GuildRequest;
 
-    #endregion
+#endregion
 
-    #region GuildMember
+#region GuildMember
 
     public event EventHandler<Event>? GuildMemberAdded;
 
@@ -28,9 +27,9 @@ public partial class SatoriBot
 
     public event EventHandler<Event>? GuildMemberRequest;
 
-    #endregion
+#endregion
 
-    #region GuildRole
+#region GuildRole
 
     public event EventHandler<Event>? GuildRoleCreated;
 
@@ -38,9 +37,9 @@ public partial class SatoriBot
 
     public event EventHandler<Event>? GuildRoleDeleted;
 
-    #endregion
+#endregion
 
-    #region Login
+#region Login
 
     public event EventHandler<Event>? LoginAdded;
 
@@ -48,9 +47,9 @@ public partial class SatoriBot
 
     public event EventHandler<Event>? LoginUpdated;
 
-    #endregion
+#endregion
 
-    #region Message
+#region Message
 
     public event EventHandler<Event>? MessageCreated;
 
@@ -58,19 +57,19 @@ public partial class SatoriBot
 
     public event EventHandler<Event>? MessageDeleted;
 
-    #endregion
+#endregion
 
-    #region Reaction
+#region Reaction
 
     public event EventHandler<Event>? ReactionAdded;
 
     public event EventHandler<Event>? ReactionRemoved;
 
-    #endregion
+#endregion
 
-    #region User
+#region User
 
     public event EventHandler<Event>? FriendRequest;
 
-    #endregion
+#endregion
 }

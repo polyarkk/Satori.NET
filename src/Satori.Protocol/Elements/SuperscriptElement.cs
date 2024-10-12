@@ -3,7 +3,6 @@
 /// <summary>
 /// 上标
 /// </summary>
-public class SuperscriptElement : Element
-{
+public class SuperscriptElement : Element {
     public override string TagName => "sub";
 }

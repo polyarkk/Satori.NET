@@ -1,22 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <PropertyGroup>
-        <Title>Satori.Client</Title>
-        <Description>Client library for Satori Protocol v1.</Description>
-        <PackageIcon>logo.png</PackageIcon>
-    </PropertyGroup>
+  <PropertyGroup>
+    <Title>Satori.Client</Title>
+    <Description>Client library for Satori Protocol v1.</Description>
+    <PackageIcon>logo.png</PackageIcon>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
 
-    <ItemGroup>
-        <ProjectReference Include="..\Satori.Protocol\Satori.Protocol.csproj" />
-    </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Satori.Protocol\Satori.Protocol.csproj" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <PackageReference Include="System.Text.Json" Version="8.0.0-rc.2.23479.6" />
-        <PackageReference Include="Websocket.Client" Version="5.0.0" />
-    </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Websocket.Client" Version="5.0.0" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <None Include="../../assets/logo.png" Pack="true" PackagePath="/" />
-    </ItemGroup>
+  <ItemGroup>
+    <None Include="../../assets/logo.png" Pack="true" PackagePath="/" />
+  </ItemGroup>
 
 </Project>

@@ -1,7 +1,6 @@
 ﻿namespace Satori.Protocol.Events;
 
-public class IdentifySignalBody
-{
+public class IdentifySignalBody {
     /// <summary>
     /// 鉴权令牌
     /// </summary>

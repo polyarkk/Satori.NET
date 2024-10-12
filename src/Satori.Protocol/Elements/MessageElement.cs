@@ -3,8 +3,7 @@
 /// <summary>
 /// 消息
 /// </summary>
-public class MessageElement : Element
-{
+public class MessageElement : Element {
     public override string TagName => "message";
 
     /// <summary>

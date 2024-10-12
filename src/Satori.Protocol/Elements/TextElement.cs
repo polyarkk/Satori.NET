@@ -3,8 +3,7 @@
 /// <summary>
 /// 纯文本
 /// </summary>
-public class TextElement : Element
-{
+public class TextElement : Element {
     public override string TagName => "";
 
     /// <summary>

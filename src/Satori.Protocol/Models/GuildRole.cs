@@ -3,8 +3,7 @@
 /// <summary>
 /// 群组角色
 /// </summary>
-public class GuildRole
-{
+public class GuildRole {
     /// <summary>
     /// 角色 ID
     /// </summary>
