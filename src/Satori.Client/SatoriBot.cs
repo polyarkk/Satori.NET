@@ -1,30 +1,36 @@
-﻿using Satori.Protocol.Events;
+﻿using Satori.Protocol.Elements;
+using Satori.Protocol.Events;
 
 namespace Satori.Client;
 
 public partial class SatoriBot {
     private readonly SatoriClient _client;
 
-    private readonly string _platform;
+    public readonly string Platform;
 
-    private readonly string _selfId;
+    public readonly string SelfId;
 
     internal SatoriBot(SatoriClient client, string platform, string selfId) {
         _client = client;
-        _platform = platform;
-        _selfId = selfId;
+        Platform = platform;
+        SelfId = selfId;
 
         _client.EventService.EventReceived += EventRaiser;
     }
 
     private Task<TData> SendAsync<TData>(string endpoint, object? body) {
-        return _client.ApiService.SendAsync<TData>(endpoint, _platform, _selfId, body);
+        return _client.ApiService.SendAsync<TData>(endpoint, Platform, SelfId, body);
     }
 
     private void EventRaiser(object? sender, Event e) {
-        if (!e.Platform.Equals(_platform, StringComparison.OrdinalIgnoreCase) ||
-            !e.SelfId.Equals(_selfId, StringComparison.OrdinalIgnoreCase))
+        if (!e.Platform.Equals(Platform, StringComparison.OrdinalIgnoreCase) ||
+            !e.SelfId.Equals(SelfId, StringComparison.OrdinalIgnoreCase))
             return;
+
+        // 不处理自身发送的消息，防止出现死循环（e.g.: kook）
+        if (e.SelfId == e.User?.Id) {
+            return;
+        }
 
         EventReceived?.Invoke(this, e);
 
